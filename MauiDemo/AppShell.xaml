@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiDemo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiDemo"
+    xmlns:Pages="clr-namespace:MauiDemo.Pages"
+    xmlns:Advanced="clr-namespace:MauiDemo.Pages.Advanced"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MauiDemo">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Exo1"
+            ContentTemplate="{DataTemplate Pages:Exo1}"
+            Route="Exo1"/>
+
+        <ShellContent 
+            Title="Exo2"
+            ContentTemplate="{DataTemplate Pages:Exo2}"
+            Route="Exo2"/>
+
+        <ShellContent 
+            Title="Exo3"
+            ContentTemplate="{DataTemplate Pages:Exo3}"
+            Route="Exo3"/>
+
+        <ShellContent 
+            Title="Exo4"
+            ContentTemplate="{DataTemplate Pages:Exo4}"
+            Route="Exo4"/>
+
+        <ShellContent
+            Title="Exo5"
+            ContentTemplate="{DataTemplate Pages:Exo5}"
+            Route="Exo5" />
+
+        <ShellContent
+            Title="Exo6"
+            ContentTemplate="{DataTemplate Pages:Exo6}"
+            Route="Exo6" />
+
+        <ShellContent
+            Title="Exo7"
+            ContentTemplate="{DataTemplate Pages:Exo7}"
+            Route="Exo7" />
+
+        <ShellContent
+            Title="Exo8"
+            ContentTemplate="{DataTemplate Pages:Exo8}"
+            Route="Exo8" />
+
+        <ShellContent
+            Title="Exo9"
+            ContentTemplate="{DataTemplate Pages:Exo9}"
+            Route="Exo9" />
+
+        <ShellContent
+            Title="Exo10"
+            ContentTemplate="{DataTemplate Pages:Exo10}"
+            Route="Exo10" />
+
+        <ShellContent
+            Title="Advanced1"
+            ContentTemplate="{DataTemplate Advanced:Advanced1}"
+            Route="Advanced1" />
+        <!--<ShellContent
+            Title="Advanced2"
+            ContentTemplate="{DataTemplate Advanced:Advanced2}"
+            Route="Advanced2" />
+        <ShellContent
+            Title="Advanced3"
+            ContentTemplate="{DataTemplate Advanced:Advanced3}"
+            Route="Advanced3" />
+        <ShellContent
+            Title="Advanced4"
+            ContentTemplate="{DataTemplate Advanced:Advanced4}"
+            Route="Advanced4" />-->
+    </FlyoutItem>
+</Shell>

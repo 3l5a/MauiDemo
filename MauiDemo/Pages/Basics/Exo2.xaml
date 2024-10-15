@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.Pages.Exo2"
+             Title="Exo2">
+    <VerticalStackLayout>
+        <Label Text="Faire une grille avec 3 colonnes, celle du milieu prenant 2x la taille des autres et 3 lignes de taille identique. Rajoutez 6 BoxView de différentes couleurs pour ressembler à ça"/>
+        <Grid ColumnDefinitions="*,2*,*" RowDefinitions="*,*,*" WidthRequest="100" HeightRequest="150">
+            <BoxView BackgroundColor="Yellow" Grid.Column="0" Grid.Row="0"/>
+            <BoxView BackgroundColor="Green" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"/>
+            <BoxView BackgroundColor="Gray" Grid.Column="2" Grid.Row="0" />
+            <BoxView BackgroundColor="Red" Grid.Column="0" Grid.Row="1"/>
+            <BoxView BackgroundColor="Pink" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+            <BoxView BackgroundColor="Blue" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

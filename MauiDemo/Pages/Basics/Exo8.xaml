@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.Pages.Exo8"
+             Title="Exo8">
+    <VerticalStackLayout>
+        <Label 
+            Text="Faire un paramétrage quelconque plus un formulaire avec un TableView"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <TableView Intent="Settings" HeightRequest="{OnPlatform Android=700}">
+            <TableRoot>
+                <TableSection Title="Paramétrage">
+                    <SwitchCell Text="Activer les notifications"/>                    
+                </TableSection>
+                <TableSection Title="Thème">                   
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="programmer2.webp" WidthRequest="50" HeightRequest="50"/>
+                            <Label Text="Activer les notifications"/>
+                            <Switch HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="programmer.webp" WidthRequest="50" HeightRequest="50"/>
+                            <Label Text="Programmeuse" VerticalOptions="Center"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+                <TableSection Title="Vos informations">
+                    <EntryCell Placeholder="Nom"/>
+                    <EntryCell Placeholder="Prénom"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </VerticalStackLayout>
+</ContentPage>

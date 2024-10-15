@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Views="using:MauiDemo.Views"
+             x:Class="MauiDemo.Pages.Exo10"
+             Title="Exo10">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label 
+            Text="Faire une page qui contient une grille avec 2 cellules qui contiennent 2 vues qui elles-mêmes contiennent 2 cellules avec 2 autres vues qui sont chargées sur le clic d’un bouton et non par XAML"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Grid ColumnDefinitions="2">
+                <StackLayout Grid.Column="0" x:Name="CV1" WidthRequest="200"></StackLayout>
+                <StackLayout Grid.Column="1" x:Name="CV2" WidthRequest="200"></StackLayout>
+                <Views:ContentViewBasic1></Views:ContentViewBasic1>
+            </Grid>
+            <Button Text="Cliquer pour révéler les vues" Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.Pages.Exo9"
+             Title="Exo9">
+    <VerticalStackLayout>
+        <Label 
+            Text="Faire une page qui contient un bouton qui amène vers une autre page en passant un paramètre dans la route qui elle-même amène vers une autre page en lui passant des paramètres via le dictionnaire (typés ou non)"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="Redirection" Clicked="Button_Clicked"/>
+        <Label Text="{Binding FromExo7}"/>
+    </VerticalStackLayout>
+</ContentPage>

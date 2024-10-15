@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.Pages.Exo5"
+             Title="Exo5">
+    <VerticalStackLayout>
+        <Label 
+            Text="Afficher une image différente sur chaque plateforme"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Image WidthRequest="300">
+            <Image.Source>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <OnPlatform.Platforms>
+                        <On Platform="iOS" Value="programmer.webp"/>
+                        <On Platform="Android" Value="programmer2.webp"/>
+                        <On Platform="UWP" Value="programmer.webp"/>
+                    </OnPlatform.Platforms>
+                </OnPlatform>
+            </Image.Source>
+            
+        </Image>
+    </VerticalStackLayout>
+</ContentPage>

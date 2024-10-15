@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.Pages.Advanced.Advanced1"
+             Title="Advanced1">
+    <VerticalStackLayout>
+        <Label 
+            Text="Faire deux box view de couleurs différentes selon les plateformes en utilisant la classe C# pour une boxview et la propriété XAML OnPlatform pour la seconde"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <BoxView BackgroundColor="{OnPlatform Android='Red', WinUI='Blue'}" WidthRequest="100" HeightRequest="100"/>
+        <BoxView WidthRequest="100" HeightRequest="100" x:Name="dynamicColor"/>
+    </VerticalStackLayout>
+</ContentPage>
